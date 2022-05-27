@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/741be1fc2f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>DistriCampestre</title>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo"><img src="./img/logo.png" alt="imagelogo"></a>
+            <ul class="navbar">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#informacion" class="nav-link">Informacion</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre nosotros</a></li>
+                <li><a href="#contacto" class="nav-link">Contactanos</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>   
+   </header>
+
+   <section class="home">
+       <div class="home-container">
+            <div class="home-info">
+                <h2>Bienvenidos a DistriCampestre</h2>
+                <p>Estamos comprometidos con el bienestar de los campesinos, deseamos otorgarles esta ayuda necesaria para la distribución de alimentos a lugares donde puedan ser comprados y vendidos sin necesidad de intermediarios a un precio justo.</p>
+                <a href="#" class="btn">Sobre nosotros</a>
+            </div>
+
+            <img class="camp" src="./img/campesino.jpg" alt="imagecampesino" >
+       </div>
+   </section>
+   
+   <section class="informacion">
+       <div class="informacion-container">
+           <div class="heading">
+               <h2>Información</h2>
+           </div>
+           <p>
+                A continuacion presentaremos las tecnologias con las que haremos que este proyecto empiece a surgir.
+           </p>
+       </div>
+        <div class="info-content">
+            <div class="info-box">
+                <img src="./img/blockchain.png" alt="imageblockchain">
+                <h2>BlockChain</h2>
+                <p>El blockchain es una tecnologia usada por la famosa moneda del bitcoin,este tipo de tecnologia es inhackeable y ayuda a no tener intermediarios a la hora de hacer algun movimiento bancario o para cualquier campo en el que se este utilizando, es muy importante para este proyecto ya que nos ayudara como se dijo en un principio a no tener intermediarios y celebrar contratos de una manera efectiva y exitosa, sin inconvenientes.</p>
+            </div>
+            <div class="info-box">
+                <img src="./img/smartcontrat.png" alt="imageSmartContract">
+                <h2>Smart Contract</h2>
+                <p>Los Smart Contracts son contratos inteligentes utilizados por diversas compañias de blockchain como lo es Etherium, estos contratos ayudan a las empresas a conectarse sin necesidad de intermediario, si no que nos permite que se celebre un contrato de una manera digital y segura, donde cada parte tanto el vendedor como el comprador ponen sus condiciones para enviar y recibir la calidad del producto y no tener ningun inconveniente.</p>
+            </div>
+        </div>
+   </section>
+
+   <section class="sobre">
+       <div class="sobre-container">
+           <div class="heading">
+               <h2>Sobre nosotros</h2>
+           </div>
+
+           <p>
+               A continuacion, podran observar una breve información de cada uno de los integrantes del proyecto al igual que el rol que cumplen dentro de este.
+           </p>
+
+            <div class="sobre-box">
+                <div class="img-content">
+                    <img src="./img/santiago.png" alt="imagesantiago">
+                    <h2>Santiago Buendia Gaitan<br><span>(Jefe del proyecto)</span></h2>
+                </div>
+                
+                <div class="box-info">
+                    <p>Estudiante de Ingenieria Informatica de ultimos semestres. Apasionado con el diseño y desarrollo web, desarrollo movil, ciberseguridad y las nuevas tecnologias. </p>
+                </div>
+            </div>
+
+            <div class="sobre-box">
+                <div class="box-info">
+                    <p>Soy estudiante de Ingeniería informatica en la Corporación Universitaria Autónoma de Nariño, tengo 23 años, decidimos realizar este proyecto a las personas que más necesitan de una revolución tecnologica para la distribución de sus productos a los lugares donde su venta sea bien remunerada, los campesinos son personas luchadoras que entregan su vida para alimentar a cada uno de los ciudadanos de este país, con esto lograremos ayudarlos y tenderles la mano para acabar con tantas injusticias con ellos.</p>
+                </div>
+
+                <div class="img-content">
+                    <img src="./img/alexander.png" alt="imagealex">
+                    <h2>Alexander Bedoya Espinel<br><span>(Jefe del proyecto)</span></h2>
+                </div>
+            </div>
+
+            <div class="sobre-box">
+                <div class="img-content">
+                    <img src="./img/luz.png" alt="imageliz">
+                    <h2>Lizeth Rivadeneira Cifuentes<br><span>(Jefe del proyecto)</span></h2>
+                </div>
+                
+                <div class="box-info">
+                    <p>Soy estudiante de la Corporación Universitaria Autónoma de Nariño en la facultad de Ingeniería, tengo 22 años, vivo en Cali, Valle del Cauca, junto con mis compañero hemos decidido realizar este proyecto para ayudar a los campesinos, ya que, con este podremos hacer que sus productos sean vendidos al precio justo, con esto evitaremos también que muchos de ellos tengan que desplazarse desde sus hogares a otros lugares y vender sus productos a un menor costo.</p>
+                </div>
+            </div>
+
+       </div>
+   </section>
+
+   <section class="contacto">
+       <div class="contacto-container">
+           <div class="heading2">
+               <h2>CONTACTANOS</h2>
+           </div>
+           <div class="contacto-content">
+                <img src="./img/img-contactanos.png" alt="imagecontactanos">
+                <div class="formulario-content">
+                    <form action="conexion.php" method="POST" id="formulario">
+                        <label for="user">Nombre(*):</label>
+                        <input type="text"name="nombre" required="" pattern="[a-zA-Z]+" placeholder="Ingresa tu nombre">
+    
+                        <label for="email">Correo electronico(*):</label>
+                        <input type="email"name="email" required="" pattern=".+@aunarcali.edu.co" placeholder="Ingresa tu correo electronico">
+    
+                        <label for="mensaje">Mensaje(*):</label>
+                        <textarea name="mensaje" minlength="1" maxlength="300"></textarea>
+    
+                        <div class="send"><button type="submit" name="enviar">Enviar</button></div>
+                        
+                        <div class="mensaje-form">
+                            <p> Escribenos tu mensaje, estaremos atentos. </p>
+                        </div>
+                    </form>
+                </div>
+           </div>
+       </div>
+   </section>
+   <footer>
+        <section class="inf">
+            <div>
+                <h2>Districampestre</h2>
+                <p>Si desea comunicarse con nosotros para ayudarle en cualquier situación relacionada a este proyecto no dude comunicarse a los contactos que tenemos a continuación</p>
+            </div>
+        </section>
+
+
+        <section class="inf2">
+            <div>
+                <h2>Contactos</h2>
+                    <div class="centrar">                
+                        <div class="flex"><img src="./img/hogar (1).png" alt="imagen_avenida" class="imagen"><p>Avenida 5 diagonal 3A Esquina</p></div> 
+                       <div class="flex"> <img src="./img/correo-electronico.png" alt="imagen_correo"        class="imagen"><p>Distri.Campestre@gmail.com</p></div>
+                        <div class="flex"><img src="./img/whatsapp.png" alt="imagen_whatsApp" class="imagen"> <p>+57 312 7687039</p></div>
+                        <div class="parrafo"><p>+57 318 8694016</p>
+                        <p>+57 313 6637733</p></div>
+                    </div>                                                                   
+            </div>                 
+        </section>
+        <section class="inf3">
+            <div>
+                <img src="./img/frutas-removebg-preview.png" alt="imagenfrutas" class="frutas">
+            </div>
+        </section>
+   </footer>
+   <script src="./js/main.js"></script>
+   <script defer src="./js/menu.js"></script>
+</body>
+</html>
